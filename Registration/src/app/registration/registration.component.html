@@ -1,0 +1,64 @@
+<body>
+  <div class="reg">
+    <div class="container">
+      <form action="">
+        <h1>Registration Form</h1>
+        <table>
+          <tr>
+            <th>Name:</th>
+            <td><input type="text" name="name" id="name" /></td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td><input type="email" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <th>Password:</th>
+            <td><input type="password" name="password" id="password" /></td>
+          </tr>
+          <tr>
+            <th>Mobile Number:</th>
+            <td><input type="text" name="mobile" id="mobile" /></td>
+          </tr>
+          <tr>
+            <th>PRN No.:</th>
+            <td><input type="text" name="prn" id="prn" /></td>
+          </tr>
+          <tr>
+            <th>Gender:</th>
+            <td>
+              <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Date of Birth:</th>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+          <tr>
+            <th>Address:</th>
+            <td><textarea name="address" id="address" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <th>Passing Year:</th>
+            <td>
+              <input
+                type="number"
+                name="passing_year"
+                id="passing_year"
+                min="2000"
+                max="2030"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <button type="submit">Register</button>
+        <p>Already registered? <a href="login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</body>
