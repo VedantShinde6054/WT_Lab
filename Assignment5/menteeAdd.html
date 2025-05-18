@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Mentee</title>
+    <link rel="stylesheet" href="assets/Add.css" />
+    <script src="validation.js"></script>
+  </head>
+  <body>
+    <div class="mentee-container">
+      <center>
+        <h1 class="mentee-title">Add New Mentee Record</h1>
+        <form class="menteeForm" method="post" action="AddController.php">
+          <table>
+            <tr>
+              <td><label for="prn">Mentee PRN No.: </label></td>
+              <td>
+                <input type="text" name="prn" class="inpt-box" id="prn" required/>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="name">Enter Mentee Name: </label></td>
+              <td>
+                <input type="text" name="name" class="inpt-box" id="name" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dept">Enter Mentee Dept: </label></td>
+              <td>
+                <input type="text" name="dept" class="inpt-box" id="dept" required/>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="dob">Enter Mentee DOB: </label></td>
+              <td>
+                <input type="date" name="dob" class="inpt-box" id="dob" required/>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="class">Enter Mentee Class: </label></td>
+              <td>
+                <select name="class" id="class" required>
+                  <option value="" disabled selected>Choose Year</option>
+                  <option value="First">First Year</option>
+                  <option value="Second">Second Year</option>
+                  <option value="Third">Third Year</option>
+                  <option value="Btech">Btech</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="contact">Enter Mentee Contact</label></td>
+              <td>
+                <input
+                  type="number"
+                  name="contact"
+                  class="inpt-box"
+                  id="contact"
+                  maxlength="10"
+                  minlength="10"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Enter Mentee Email</label></td>
+              <td>
+                <input type="email" name="email" class="inpt-box" id="email" required>
+              </td>
+            </tr>
+            <tr>
+                <td><label for="prnt_name">Enter Parent Name: </label></td>
+                <td><input type="text" name="prnt_name" id="prnt_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="prnt_contact">Enter Parent Contact: </label></td>
+                <td><input type="number" name="prnt_contact" id="prnt_contact" maxlength="10" minlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="ch_mentor">Choose Your Mentor: </label></td>
+                <td><select name="ch_mentor" id="ch_mentor" required>
+                    <option value="" disabled selected>Choose Your Mentor</option>
+                    <option value="Mentor-1" >Mentor-1</option>
+                    <option value="Mentor-2" >Mentor-2</option>
+                    <option value="Mentor-3" >Mentor-3</option>
+                </select></td>
+            </tr>
+        </table>
+        <label for="confirm-add">Confirm that all fields are filled</label><input type="checkbox" name="confirm-add"><br><br>
+          <input type="submit" name="Add-mentee" id="Add-mentee" value="Add Mentee">
+          <a href="index.html"><input type="button" name="go-home" id="go-home" value="Go to home"></a>
+        </form>
+      </center>
+    </div>
+  </body>
+    
+
+</html>

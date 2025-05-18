@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d7da; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mentee-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.mentee-title {
+    color: #721c24;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+.inpt-box {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+td {
+    padding: 8px;
+}
+
+#Remove-mentee {
+    background: #dc3545; 
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#Remove-mentee:hover {
+    background: #c82333;
+}
+
+#go-home {
+    background: #007bff; 
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#go-home:hover {
+    background: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mentee-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    table, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        padding: 5px 0;
+    }
+}

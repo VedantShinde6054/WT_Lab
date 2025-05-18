@@ -1,39 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+body{
+    font-size: 1.2rem;
 }
 
-form {
-  margin-bottom: 20px;
+td{
+    padding: 10px 10px;
 }
 
-input,
-select {
-  padding: 8px;
-  margin: 5px;
-}
-
-button {
-  padding: 8px 12px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-table {
-  margin: auto;
-  border-collapse: collapse;
-  width: 50%;
-}
-
-th,
-td {
-  padding: 10px;
-  border: 1px solid black;
-}
-
-th {
-  background: #007bff;
-  color: white;
-}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 40px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 450px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        @media (max-width: 500px) {
+            form {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <h1>Update A Book Records</h1>
+        <form action="update" method="post">
+            Book Id : <br>
+            <input type="text" name="B_id" required><br>
+            Book Title: <br>
+            <input type="text" name="B_title" required><br>
+            Book Author : <br>
+            <input type="text" name="B_author"><br>
+            Book Price : <br>
+            <input type="text" name="B_price"><br>
+            Book Quantity : <br>
+            <input type="text" name="B_qty"><br><br>
+            <input type="submit" name="Update" value="Update">
+        </form><br>
+        <a href="/First Servlet Mysql/welcome">Display Records</a>
+        <a href="index.html">Insert Records</a>
+        <a href="delete.html">Delete Records</a>
+</body>
+</html>

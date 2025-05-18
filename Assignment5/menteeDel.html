@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Mentee</title>
+    <link rel="stylesheet" href="assets/Delete.css">
+</head>
+<body>
+    <div class="mentee-container">
+        <center>
+            <h1 class="mentee-title">Remove Existing Mentee Record</h1>
+            <form action="DeleteController.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="prn">Enter Mentee PRN No.</label></td>
+                    <td><input type="text" name="prn" class="inpt-box" id="prn"></td>
+                </tr>
+            </table>
+            <button type="submit" name="Remove-mentee" id="Remove-mentee">Remove Record</button>
+            <a href="index.html"><input type="button" name="go-home" id="go-home" value="Go to home"></a>
+            </form>
+        </center>
+
+    </div>
+</body>
+</html>
